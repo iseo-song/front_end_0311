@@ -22,7 +22,7 @@ jobs:
       - uses: appleboy/scp-action@v0.1.7
         with: 
           host: ${{ secrets.PUBLIC_HOST }}
-          username: ${{ secrets.PUBLIC_ USER }}
+          username: ${{ secrets.PUBLIC_USER }}
           key: ${{ secrets.PUBLIC_SSH_KEY }}
           source: "./*"
           target: "/var/www/html"
